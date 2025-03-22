@@ -1,10 +1,42 @@
-/*
- * This is a manifest file that'll be compiled into application.css.
- *
- * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
- * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
- * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
- * depending on specificity.
- *
- * Consider organizing styles into separate files for maintainability.
- */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Corrected */
+  }
+  
+  /* Extra Small Screens (Phones) */
+  @media (max-width: 575px) {
+    .container {
+      max-width: 90%;
+    }
+  }
+  
+  /* Small Screens (Tablets in Portrait) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .container {
+      max-width: 90%;
+    }
+  }
+  
+  /* Medium Screens (Tablets in Landscape, Small Laptops) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+      max-width: 90%;
+    }
+  }
+  
+  /* Large Screens (Desktops & Large Laptops) */
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 90%;
+    }
+  }
+  
+  /* Image Styles */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Adjust this based on needs */
+    margin: 0 auto;
+  }
+  
