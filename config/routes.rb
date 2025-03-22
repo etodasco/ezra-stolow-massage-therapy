@@ -12,4 +12,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "profile#index"
+
+  get "about", to: "profile#about"
+  get "contact", to: "profile#contact"
 end
