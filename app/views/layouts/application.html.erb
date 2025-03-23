@@ -36,31 +36,7 @@
   <body>
     <%= yield %>
 
-    <footer class="d-flex flex-column align-items-center py-3 border-top">
-      <ul class="nav list-unstyled d-flex justify-content-center mb-2">
-        <li class="mx-2">
-          <a class="facebook-footer" href="https://www.facebook.com/profile.php?id=100092381130477" target="_blank">
-            <i class="fa-brands fa-facebook fa-lg"></i>
-          </a>
-        </li>
-        <li class="mx-2">
-          <a class="instagram-footer" href="#" target="_blank">
-            <i class="fa-brands fa-instagram fa-lg"></i>
-          </a>
-        </li>
-        <li class="mx-2">
-          <a class="x-footer" href="#" target="_blank">
-            <i class="fa-brands fa-x-twitter fa-lg"></i>
-          </a>
-        </li>
-      </ul>
-
-      <div class="text-center">
-        <a href="/" class="text-body-secondary text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <span class="text-body-secondary">© 2025 Massothérapie Thérapeutique Ezra Stolow</span>
-      </div>
-    </footer>
+    <%= render "layouts/footer" %>
+    
   </body>
 </html>
