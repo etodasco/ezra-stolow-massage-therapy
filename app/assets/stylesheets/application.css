@@ -1,4 +1,9 @@
 /* Global Styles */
+.logo-img {
+  height: 30px;
+  width: 30px;
+}
+
 body {
   max-width: 100%;
   overflow-x: hidden; /* Prevents horizontal scrolling */
