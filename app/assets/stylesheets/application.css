@@ -1,6 +1,15 @@
+/* Global Styles */
 body {
   max-width: 100%;
-  overflow-x: hidden; /* Corrected */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  min-height: 100vh; /* Ensures full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensures content pushes footer to the bottom */
+.container {
+  flex: 1;
 }
 
 /* Image Styles */
@@ -8,43 +17,58 @@ img {
   width: 100%;
   height: 350px;
   display: block;
-  object-fit: cover; /* Adjust this based on needs */
+  object-fit: cover;
   object-position: top;
   margin: 0 auto;
 }
 
+/* Heading Styles */
 h1 {
   font-family: "Kanit", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
-  /* Extra Small Screens (Phones) */
-  @media (max-width: 575px) {
-    .container {
-      max-width: 100%;
-    }
+/* Navigation Icons */
+.nav i {
+  font-size: 24px; /* Adjust icon size */
+  color: #6c757d; /* Bootstrap default text color */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover i {
+  color: #007bff; /* Bootstrap primary color on hover */
+}
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  background-color: white; /* Adjust as needed */
+  padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 575px) { /* Extra Small Screens (Phones) */
+  .container {
+    max-width: 100%;
   }
-  
-  /* Small Screens (Tablets in Portrait) */
-  @media (min-width: 576px) and (max-width: 767px) {
-    .container {
-      max-width: 100%;
-    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) { /* Small Screens (Tablets in Portrait) */
+  .container {
+    max-width: 100%;
   }
-  
-  /* Medium Screens (Tablets in Landscape, Small Laptops) */
-  @media (min-width: 768px) and (max-width: 1199px) {
-    .container {
-      max-width: 100%;
-    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) { /* Medium Screens (Tablets in Landscape, Small Laptops) */
+  .container {
+    max-width: 100%;
   }
-  
-  /* Large Screens (Desktops & Large Laptops) */
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 100%;
-    }
+}
+
+@media (min-width: 1200px) { /* Large Screens (Desktops & Large Laptops) */
+  .container {
+    max-width: 100%;
   }
-  
-  
+}
