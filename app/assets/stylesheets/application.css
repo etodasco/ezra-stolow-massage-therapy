@@ -1,42 +1,49 @@
 html, body {
-    max-width: 100%;
-    overflow-x: hidden; /* Corrected */
-  }
-  
+  max-width: 100%;
+  overflow-x: hidden; /* Corrected */
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Adjust this based on needs */
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
   /* Extra Small Screens (Phones) */
   @media (max-width: 575px) {
     .container {
-      max-width: 90%;
+      max-width: 100%;
     }
   }
   
   /* Small Screens (Tablets in Portrait) */
   @media (min-width: 576px) and (max-width: 767px) {
     .container {
-      max-width: 90%;
+      max-width: 100%;
     }
   }
   
   /* Medium Screens (Tablets in Landscape, Small Laptops) */
   @media (min-width: 768px) and (max-width: 1199px) {
     .container {
-      max-width: 90%;
+      max-width: 100%;
     }
   }
   
   /* Large Screens (Desktops & Large Laptops) */
   @media (min-width: 1200px) {
     .container {
-      max-width: 90%;
+      max-width: 100%;
     }
   }
   
-  /* Image Styles */
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover; /* Adjust this based on needs */
-    margin: 0 auto;
-  }
   
