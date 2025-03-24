@@ -11,6 +11,10 @@
   object-position: 50% 7%;
 }
 
+.assurance.banner {
+  text-align: center;
+}
+
 .ezra-hands-img {
   max-width: 350px; /* Adjust width */
   height: 500px; /* Maintain aspect ratio */
