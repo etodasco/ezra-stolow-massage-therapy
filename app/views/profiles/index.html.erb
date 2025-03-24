@@ -18,40 +18,45 @@
     <div class="mt-2 text-center">
         <div class="row featurette mt-3">
             <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">Massage Thérapeutique Specific. 
+                <h2 class="featurette-heading fw-normal lh-1">Massage Thérapeutique Specific.<br> 
                     <span class="text-body-secondary">Approach Ostéopathic</span>
                 </h2>
                 <p class="lead">Spécialisé en Blessure et Douleurs Chroniques</p>
+                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
             </div>
             <div class="col-md-5">
-                <img src="<%= asset_path('ezra-hands.jpg') %>" class="img-fluid mx-auto d-block ezra-hands-img" alt="Ezra Stolow">  
+                <img src="<%= asset_path('ezra-hands.jpg') %>" class="ezra-hands img-fluid mx-auto d-block ezra-hands-img" alt="Ezra Stolow">  
             </div>
         </div>
     </div>
+
+    <hr>
+        <div class="text-center">
+            <p>Mes Technique</p>
+        </div>
+    <hr>
+
+    <div id="carouselExample" class="carousel slide mt-3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <%= image_tag "drainage-lymphatique.jpg", class: "d-block img-fluid mx-auto carousel-img", alt: "Image 1" %>
+            </div>
+            <div class="carousel-item">
+            <%= image_tag "Gua sha.jpg", class: "d-block img-fluid mx-auto carousel-img", alt: "Image 2" %>
+            </div>
+            <div class="carousel-item">
+            <%= image_tag "faciatherapie.jpg", class: "d-block img-fluid mx-auto carousel-img", alt: "Image 3" %>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev bg-dark rounded-circle p-2 position-absolute" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"
+            style="width: 40px; height: 40px; top: 50%; transform: translateY(-50%); left: 10px;">
+            <span class="carousel-control-prev-icon" style="width: 20px; height: 20px;"></span>
+        </button>
+
+        <button class="carousel-control-next bg-dark rounded-circle p-2 position-absolute" type="button" data-bs-target="#carouselExample" data-bs-slide="next"
+            style="width: 40px; height: 40px; top: 50%; transform: translateY(-50%); right: 10px;">
+            <span class="carousel-control-next-icon" style="width: 20px; height: 20px;"></span>
+        </button>
+    </div>
 </div>
-
-<div id="carouselExample" class="carousel slide mt-3" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <%= image_tag "drainage-lymphatique.jpg", class: "d-block w-75 mx-auto", alt: "Image 1" %>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag "Gua sha.jpg", class: "d-block w-75 mx-auto", alt: "Image 2" %>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag "faciatherapie.jpg", class: "d-block w-75 mx-auto", alt: "Image 3" %>
-    </div>
-  </div>
-
-
-  <button class="carousel-control-prev bg-dark rounded-circle p-2 position-absolute" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"
-    style="width: 40px; height: 40px; top: 50%; transform: translateY(-50%); left: 10px;">
-    <span class="carousel-control-prev-icon" style="width: 20px; height: 20px;"></span>
-  </button>
-
-  <button class="carousel-control-next bg-dark rounded-circle p-2 position-absolute" type="button" data-bs-target="#carouselExample" data-bs-slide="next"
-    style="width: 40px; height: 40px; top: 50%; transform: translateY(-50%); right: 10px;">
-    <span class="carousel-control-next-icon" style="width: 20px; height: 20px;"></span>
-  </button>
-</div>
-
